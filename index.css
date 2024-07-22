@@ -1,0 +1,205 @@
+main{
+    width:100%;
+    background-image: url(blog\ bgimg\ 2.png);
+    background-size: COVER;
+    background-repeat: no-repeat;
+    margin-top: 80PX;
+    display:flex;
+    align-items: center;
+    z-index:100;
+    transition: 6s ease-in-out color rgb(39, 54, 52);
+    height: 100%;
+    font-family: "lexend";
+} 
+
+main:hover {
+    background-color:color rgb(39, 54, 52); /* Darken on hover */
+}
+
+main h1{
+    font-size: 50PX;
+    line-height: 55px;
+    padding: 5px 15px;
+    width: fit-content;
+    text-shadow: 2px 2px darkgoldenrod;
+    transition: text-shadow 1s ease-in-out;
+}
+
+main h2{
+    font-size: 50PX;
+    line-height: 55px;
+    padding: 5px 15px;
+    width: fit-content;
+    text-shadow: 2px 2px darkgoldenrod;
+    transition: text-shadow 0.5s ease-in-out;
+}
+
+main h3{
+    font-size: 50PX;
+    line-height: 55px;
+    padding: 5px 15px;
+    width: fit-content;
+    text-shadow: 2px 2px hsl(0, 0%, 100%);
+    transition: text-shadow 0.5s ease-in-out;
+}
+
+main h1:hover {
+    text-shadow: 5px 7px hsl(0, 0%, 80%); /* Increase shadow distance and adjust color on hover */
+}
+main h2:hover {
+    text-shadow: 5px 7px hsl(0, 0%, 80%); /* Increase shadow distance and adjust color on hover */
+}main h3:hover {
+    text-shadow: 5px 7px hsl(0, 0%, 80%); /* Increase shadow distance and adjust color on hover */
+}
+
+main p{
+    font-size: 29PX;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+main a{
+    text-shadow: none;
+    margin-top: 30px;
+    font-size: 18px;
+    display: block;
+    background-color: var(--site-color-01);
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 25px;
+    border: solid 1px black;
+    transition: transform 0.3s ease-in-out;
+}
+
+main a:hover {
+    color: rgba(8, 26, 105, 0.788);
+    transform: scale(1.1); /* Slightly increase size on hover */
+}
+
+main .main-quotes p{
+    border-left: 4px solid var(--site-color-01);
+    border-right: 4px solid var(--site-color-01);
+    margin:45px 0px;
+    margin-left: 20px;
+    margin-right: 80px;
+    overflow: hidden; 
+    transition: background-color 0.2s ease-in-out; 
+}
+
+main .main-quotes p:nth-child(2){
+    border-right: 5px solid var(--site-color-01);
+    border-left: 5px solid var(--site-color-01);
+    margin-left: 40px;
+    margin-right: 90px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main .main-quotes p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(var(--site-color-01), 0.2); /* Add a subtle background color on hover */
+}
+  
+/*CATEGORY*/
+.index-category{
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(featured\ img.png);
+    box-shadow: 0 2px 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.index-category :hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(var(--site-color-01), 0.2);
+}
+.index-category p{
+    color: #111111;
+    text-align: center;
+    font-size: larger;
+    flex-basis: 100%;
+    display: flex;
+    border-bottom: 3px solid khaki; /* Adjust line style here */
+    padding-top:10px; /* Optional spacing below the line */
+    margin-bottom:10px;
+    margin: 0PX 2500PX;
+    justify-content: center;
+}
+
+.index-category :hover{
+    background: #555;
+}
+
+.index-category-politics{
+    margin:10px;
+    border: 1px solid black;
+    width: 500px;
+    height: 250px;
+    background-repeat: no-repeat;
+    display:block ;
+}
+
+.index-category-politics h3{
+    font-size: 40px;
+    text-shadow: -2px 2PX 4px black;
+    color: gold;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    margin: 100px 150px;
+    border: 6px solid;
+    border-right: #333;
+    border-top: #333;
+
+}
+
+/*FOOTER*/
+ footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer .contact-details {
+            margin-bottom: 20px;
+        }
+
+        footer button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        footer button:hover {
+            background-color: #777;
+        }
+
+        @media (max-width: 768px) {
+            /* Styles for screens smaller than 768px */
+          }
+          
+          @media (min-width: 768px) and (max-width: 992px) {
+            /* Styles for screens between 768px and 992px */
+          }
+          
+          @media (min-width: 992px) {
+            /* Styles for screens larger than 992px */
+          }
+          main h1, main h2, main h3 {
+            @media (max-width: 768px) {
+              font-size: 30px;
+            }
+          }
+          .index-category-politics {
+            @media (max-width: 768px) {
+              width: 100%; /* Set width to 100% on smaller screens */
+            }
+          }
+          

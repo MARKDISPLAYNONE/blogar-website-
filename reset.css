@@ -1,0 +1,50 @@
+/* Updated CSS Reset for Modern Browsers */
+
+/* 1. Leverage `unset` and `revert` for a clean slate: */
+*,
+*::before,
+*::after {
+  all: unset;
+  display: revert;
+}
+
+/* 2. Isolate root element for styling consistency: */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 3. Ensure consistent box-sizing behavior: */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 4. Optional: Remove default list styles: */
+ol,
+ul {
+  list-style: none; /* Remove bullets/numbers */
+}
+
+/* 5. Prevent images from overflowing containers: */
+img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* 6. Ensure consistent table cell behavior: */
+table {
+  border-collapse: collapse;
+}
+
+/* 7. Address potential textarea white-space issues: */
+textarea {
+  white-space: revert;
+}
+
+/* 8. Consider using the `:where()` pseudo-class cautiously: */
+/* While powerful, use it sparingly due to potential browser support issues. */
+
+/* 9. Remember to adapt based on your project needs: */
+/* This reset is a starting point, customize it for your specific use case. */

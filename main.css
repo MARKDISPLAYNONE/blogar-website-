@@ -1,0 +1,247 @@
+:root {
+  --site-color-01: hsl(51, 87%, 46%);
+  --site-color-02-hover: #000;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  font-size: 26px;
+  line-height: 32px;
+  color: #000;
+  font-family: Lexend;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000;
+  font-family: "Lexend";
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.a {
+  cursor: pointer;
+}
+
+.header-main {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #777;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.header-main-logo {
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.header-main-logo img {
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.header-main-nav {
+  width: fit-content;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: none;
+  overflow: hidden;
+}
+
+.header-main-nav li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px darkgoldenrod;
+  color: black;
+}
+
+.header-main-nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.header-main-nav ul li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.header-main-nav ul li a {
+  font-weight: bold;
+  justify-content: center;
+  font-family: "Lexend";
+  line-height: 60px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-main-signup {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 0px 5px;
+  background-color: #2e3026;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-main-signup:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+#search-bar {
+  padding: 5px 15px;
+  border-radius: 20px;
+  line-height: 20px;
+  border: 2px solid black;
+  background-color: hsl(49, 29%, 89%);
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+#search-bar:focus {
+  border-color: hsl(51, 87%, 46%);
+  background-color: hsla(49, 29%, 89%, 0.8);
+}
+
+#search-btn,
+#signup-btn {
+  border-radius: 25px;
+  line-height: 25px;
+  border: 1px solid black;
+  background-color: hsl(51, 87%, 46%);
+  cursor: pointer;
+  padding: 5px 10px;
+  font-family: "Lexend", sans-serif;
+  color: #fff;
+  transition: all 0.2s ease;
+  margin: 0 5px;
+}
+
+#search-btn:hover,
+#signup-btn:hover {
+  background-color: hsl(51, 87%, 56%);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  h1 {
+      font-size: 24px;
+      line-height: 30px;
+  }
+
+  .header-main {
+      height: 70px;
+  }
+
+  .header-main-logo,
+  .header-main-logo img,
+  .header-main-nav {
+      height: 70px;
+  }
+
+  .header-main-nav ul li a {
+      line-height: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+      font-size: 22px;
+      line-height: 28px;
+  }
+
+  .header-main {
+      height: 60px;
+  }
+
+  .header-main-logo,
+  .header-main-logo img,
+  .header-main-nav {
+      height: 60px;
+  }
+
+  .header-main-nav ul li a {
+      line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+      font-size: 20px;
+      line-height: 26px;
+  }
+
+  .header-main {
+      height: 50px;
+  }
+
+  .header-main-logo,
+  .header-main-logo img,
+  .header-main-nav {
+      height: 50px;
+  }
+
+  .header-main-nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header-main-nav ul li a {
+      line-height: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+      font-size: 18px;
+      line-height: 24px;
+  }
+
+  .header-main {
+      height: 40px;
+  }
+
+  .header-main-logo,
+  .header-main-logo img,
+  .header-main-nav {
+      height: 40px;
+  }
+
+  .header-main-nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .header-main-nav ul li {
+      margin: 2px;
+  }
+
+  .header-main-nav ul li a {
+      line-height: 20px;
+  }
+}
